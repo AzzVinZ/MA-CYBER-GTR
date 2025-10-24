@@ -16,12 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Exemple de build (optionnel) : mets tes commandes ici
-      - name: Build site
-        run: |
-          mkdir -p dist
-          cp -r ./public/* dist/
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
